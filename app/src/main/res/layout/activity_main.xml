@@ -8,10 +8,76 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nathansass.androidui.MainActivity">
+    android:background="@drawable/exotic_vacation_jpg"
+    tools:context="com.nathansass.androidui.MainActivity"
+    android:clickable="true">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/facebookButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/airbnblogo"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in with Facebook"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:textAllCaps="false"
+        android:drawablePadding="0dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/facebookButton"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#3b5998"
+        android:singleLine="true"
+        android:clickable="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in with Email"
+        android:textColor="#ffffff"
+        android:background="#c71111"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:id="@+id/emailButton"
+        android:layout_below="@+id/facebookButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:clickable="true"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape"
+        android:id="@+id/button"
+        android:layout_below="@+id/emailButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:capitalize="none"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="By signing up, I agree to AirBnB&apos;s terms of service, Privacy Policy"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
 </RelativeLayout>
